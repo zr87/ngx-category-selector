@@ -2,7 +2,7 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.5.
 
-![](preview.gif)
+![NgxCategorySelector Demo](./../../../preview.gif)
 
 ##Installation
 
