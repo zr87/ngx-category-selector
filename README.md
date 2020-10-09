@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
-##Installation
+## Installation
 
 `npm i @rzdesign/ngx-category-selector`
 
-##API
+## API
 `import {NgxCategorySelectorModule} from '@rzdesign/ngx-category-selector';`
 
 Selector: `lib-ngx-category-selector`
