@@ -1,0 +1,35 @@
+{
+  "name": "@rzdesign/ngx-category-selector",
+  "version": "0.0.1",
+  "description": "Simple category chooser component",
+  "author": "RZdesign <zoltan@rzdesign.hu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zr87/ngx-category-selector"
+  },
+  "bugs": {
+    "url": "https://github.com/zr87/ngx-category-selector/issues"
+  },
+  "homepage": "https://github.com/zr87/ngx-category-selector",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "category",
+    "chooser",
+    "tree",
+    "recrusive",
+    "selector"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^10.1.5",
+    "@angular/core": "^10.1.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

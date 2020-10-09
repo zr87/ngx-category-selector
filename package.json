@@ -1,15 +1,35 @@
 {
-  "name": "category-selector",
-  "version": "0.0.0",
+  "name": "ngx-category-selector",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-web-component": "./build.sh",
+    "build-ngx-category-selector": "ng build @rzdesign/ngx-category-selector",
+    "build-ngx-category-selector:watch": "ng build @rzdesign/ngx-category-selector -- --watch",
+    "build-ngx-category-selector:prod": "ng build @rzdesign/ngx-category-selector --prod",
     "test": "ng test",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/zr87/ngx-category-selector"
+  },
+  "bugs": {
+    "url": "https://github.com/zr87/ngx-category-selector/issues"
+  },
+  "homepage": "https://github.com/zr87/ngx-category-selector",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "category",
+    "selector",
+    "chooser"
+  ],
   "dependencies": {
     "@angular/animations": "~10.1.5",
     "@angular/common": "~10.1.5",
@@ -38,6 +58,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^10.1.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",

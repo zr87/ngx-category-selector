@@ -1,0 +1,15 @@
+:host {
+  display: inline-block;
+
+  .invisible {
+    display: none;
+  }
+  .selected {
+    background: orange;
+  }
+}
+
+.divider {
+  margin: 0 5px;
+  font-size: 1em;
+}

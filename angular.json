@@ -119,6 +119,46 @@
           }
         }
       }
+    },
+    "@rzdesign/ngx-category-selector": {
+      "projectType": "library",
+      "root": "projects/rzdesign/ngx-category-selector",
+      "sourceRoot": "projects/rzdesign/ngx-category-selector/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/rzdesign/ngx-category-selector/tsconfig.lib.json",
+            "project": "projects/rzdesign/ngx-category-selector/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/rzdesign/ngx-category-selector/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rzdesign/ngx-category-selector/src/test.ts",
+            "tsConfig": "projects/rzdesign/ngx-category-selector/tsconfig.spec.json",
+            "karmaConfig": "projects/rzdesign/ngx-category-selector/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/rzdesign/ngx-category-selector/tsconfig.lib.json",
+              "projects/rzdesign/ngx-category-selector/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "category-selector"
 }
