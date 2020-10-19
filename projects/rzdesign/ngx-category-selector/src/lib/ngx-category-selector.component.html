@@ -1,6 +1,4 @@
-<button *ngFor="let item of data; trackBy: trackByFn"
-            [class.selected]="item.id === selectedCategory?.id"
-            [class.invisible]="selectedCategory && selectedCategory != item"
-            (click)="clickChip($event, item)">{{ item.name }}</button>
-<span class="divider" *ngIf="selectedCategory && selectedCategory?.children.length">/</span>
-<ng-container #vc></ng-container>
+<lib-category-set [data]="data"
+                  [selected]="preselection"
+                  (selection)="selection.emit($event)"
+></lib-category-set>

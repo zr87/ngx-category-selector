@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { NgxCategorySelectorComponent } from './ngx-category-selector.component';
+import { CategorySetComponent } from './category-set/category-set.component';
 
 
 
 @NgModule({
-  declarations: [NgxCategorySelectorComponent],
+  declarations: [NgxCategorySelectorComponent, CategorySetComponent],
   imports: [CommonModule],
   exports: [NgxCategorySelectorComponent]
 })
