@@ -1,4 +1,5 @@
-# NgxCategorySelector
+# NgxCategorySelector [![npm version](https://badge.fury.io/js/%40rzdesign%2Fngx-category-selector.svg)](https://badge.fury.io/js/%40rzdesign%2Fngx-category-selector)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
