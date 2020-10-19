@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![NgxCategorySelector Demo](preview.gif)
 
-## Installation
+##Installation
 
 `npm i @rzdesign/ngx-category-selector`
 
-## API
+##API
 `import {NgxCategorySelectorModule} from '@rzdesign/ngx-category-selector';`
 
 Selector: `lib-ngx-category-selector`
@@ -18,6 +18,8 @@ Selector: `lib-ngx-category-selector`
 | Input            | Type            | Required                   | Description                                                                                               |
 | ---------------- | --------------- | -------------------------- | --------------------------------------------------------------------------------------------------------- |
 | data             | CategoryNode[ ] | **YES**                    | Array of CategoryNodes                                                |
+| select           | CategoryNode    | optional                   | Preselects a category                                                |
+
 
 ### @Outputs()
 
@@ -25,10 +27,11 @@ Selector: `lib-ngx-category-selector`
 | ---------------- | ------------ | -------- | ------------------------------------------------------ |
 | selection        | CategoryNode | **YES**  | Emits the selected category node                       |
 
-## Development server
- 1. run `npm run build-ngx-category-selector`. This will auto rebuild the lib on changes.       
- 2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
- 
+
+##Planned features
+
+- implement ControlValueAccessor => add ability to use the component as a form control
+  
 
 ## :mailbox_with_mail: License & Postcardware
 
