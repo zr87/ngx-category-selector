@@ -5,11 +5,11 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ![NgxCategorySelector Demo](./../../../preview.gif)
 
-##Installation
+## Installation
 
 `npm i @rzdesign/ngx-category-selector`
 
-##API
+## API
 `import {NgxCategorySelectorModule} from '@rzdesign/ngx-category-selector';`
 
 Selector: `lib-ngx-category-selector`

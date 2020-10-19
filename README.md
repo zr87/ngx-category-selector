@@ -5,11 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![NgxCategorySelector Demo](preview.gif)
 
-##Installation
+## Installation
 
 `npm i @rzdesign/ngx-category-selector`
 
-##API
+## API
 `import {NgxCategorySelectorModule} from '@rzdesign/ngx-category-selector';`
 
 Selector: `lib-ngx-category-selector`
@@ -29,7 +29,7 @@ Selector: `lib-ngx-category-selector`
 | selection        | CategoryNode | **YES**  | Emits the selected category node                       |
 
 
-##Planned features
+## Planned features
 
 - implement ControlValueAccessor => add ability to use the component as a form control
   
