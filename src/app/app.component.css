@@ -2,3 +2,25 @@
   display: block;
   margin-top: 50px;
 }
+
+hr {
+  margin: 30px 0;
+}
+
+div {
+  margin: 10px 0;
+}
+
+button.reset {
+  border: 1px solid red;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.warning {
+  color: red;
+}
+
+/* Override button styles */
+/deep/ lib-ngx-category-selector lib-category-set button { padding: 5px 10px; border: 1px orange solid; outline: none}
+/deep/ lib-ngx-category-selector lib-category-set button:hover { background: darkgray; cursor: pointer}

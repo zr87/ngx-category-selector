@@ -1,4 +1,28 @@
+<h1>Demo</h1>
 
-Choose a category: <lib-ngx-category-selector [data]="categoryData" (selection)="onCategorySelect($event)"></lib-ngx-category-selector>
+<h2>Example 1: Simple category selection</h2>
+Choose a category: <lib-ngx-category-selector [data]="categoryData"
+                                              (selection)="onCategorySelect($event)"></lib-ngx-category-selector>
 
 <div class="output" [innerHtml]="output"></div>
+
+<hr />
+
+<h2>Example 2: Setting preselected category</h2>
+<lib-ngx-category-selector [data]="categoryData"
+                           [select]="selection"></lib-ngx-category-selector>
+
+<p></p>
+<div>
+  Select options:
+  <button (click)="selection = list[0]">Fruits/Tropical/Subtropical</button>
+  <button (click)="selection = list[1]">Fruits</button>
+  <button (click)="selection = list[2]">Vegetables</button>
+  <button (click)="selection = list[3]">Vegetables/Roots</button>
+  <button class="reset" (click)="selection = null">Reset selection</button>
+</div>
+
+<hr>
+
+<h2>Example 3: Using it as a form control - <span class="warning">Coming soon!</span></h2>
+
