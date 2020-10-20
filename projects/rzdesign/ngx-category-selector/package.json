@@ -1,6 +1,6 @@
 {
   "name": "@rzdesign/ngx-category-selector",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Simple category chooser component in Angular",
   "author": "RZdesign <zoltan@rzdesign.hu>",
   "repository": {

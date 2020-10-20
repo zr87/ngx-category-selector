@@ -1,5 +1,7 @@
 # NgxCategorySelector [![npm version](https://badge.fury.io/js/%40rzdesign%2Fngx-category-selector.svg)](https://badge.fury.io/js/%40rzdesign%2Fngx-category-selector)
 
+Angular category selector component & form control.
+ 
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.5.
 
@@ -9,10 +11,46 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 `npm i @rzdesign/ngx-category-selector`
 
-## API
-`import {NgxCategorySelectorModule} from '@rzdesign/ngx-category-selector';`
+## How to use it
+Import `NgxCategorySelectorModule` in your module.
 
-Selector: `lib-ngx-category-selector`
+```typescript
+import {NgxCategorySelectorModule} from '@rzdesign/ngx-category-selector';
+```
+
+##### Selector: `lib-ngx-category-selector`
+
+```angular2html
+<lib-ngx-category-selector [data]="categoryData"
+                           (selection)="onCategorySelect($event)"></lib-ngx-category-selector>
+```
+
+#### Data source example: 
+```javascript
+  categoryData: CategoryNode[] = [
+    {
+      id: 1, name: 'Fruits', children: [
+        {
+          id: 3, name: 'Tropical', children: [
+            {
+              id: 9, name: 'Subtropical', children: []
+            }
+          ]
+        },
+        {id: 4, name: 'Melons', children: []},
+        {id: 5, name: 'Berries', children: []},
+        {id: 6, name: 'Citrus', children: []}
+      ]
+    },
+    {
+      id: 2, name: 'Vegetables', children: [
+        {id: 7, name: 'Leaves', children: []},
+        {id: 8, name: 'Root', children: []},
+      ]
+    },
+  ];
+
+```
 
 ### @Inputs()
 
@@ -31,7 +69,8 @@ Selector: `lib-ngx-category-selector`
 
 ## Planned features
 
-- implement ControlValueAccessor => add ability to use the component as a form control
+- [ ] add unit tests 
+- [x] implement ControlValueAccessor => add ability to use the component as a form control 
   
 
 ## :mailbox_with_mail: License & Postcardware
