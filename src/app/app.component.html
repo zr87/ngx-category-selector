@@ -24,5 +24,20 @@ Choose a category: <lib-ngx-category-selector [data]="categoryData"
 
 <hr>
 
-<h2>Example 3: Using it as a form control - <span class="warning">Coming soon!</span></h2>
+<h2>Example 3: Using it as a form control</h2>
+
+<form [formGroup]="exampleForm">
+  <lib-ngx-category-selector [data]="categoryData" formControlName="categoryControl"></lib-ngx-category-selector>
+</form>
+
+
+<div>
+  <code>
+    <b>Example form raw content:</b>
+    <pre>
+  {{ exampleForm.getRawValue() | json }}
+</pre>
+  </code>
+
+</div>
 

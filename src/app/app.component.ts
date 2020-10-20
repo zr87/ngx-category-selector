@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {CategoryNode} from 'projects/rzdesign/ngx-category-selector/src/public-api';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -35,13 +36,21 @@ export class AppComponent {
     },
   ];
 
-  constructor() {
+  exampleForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    // Example 2
     this.list = [
       this.categoryData[0].children[0].children[0],
       this.categoryData[0],
       this.categoryData[1],
       this.categoryData[1].children[1],
     ];
+
+    // Example 3
+    this.exampleForm = this.fb.group({
+      categoryControl: new FormControl(this.list[0])
+    });
   }
 
 
