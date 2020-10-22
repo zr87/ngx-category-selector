@@ -8,6 +8,12 @@ import {
 import {BehaviorSubject} from 'rxjs';
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 
+export interface CategoryNode {
+  name: string;
+  id: string | number;
+  children: CategoryNode[];
+}
+
 const CATEGORY_CONTROL_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => NgxCategorySelectorComponent),
@@ -24,11 +30,8 @@ export class NgxCategorySelectorComponent implements OnInit, ControlValueAccesso
 
   preselection: (string | number)[] | null = [];
   private preselectionSubject = new BehaviorSubject<CategoryNode>(null);
-
-  // tslint:disable-next-line:ban-types
-  private onTouch: Function;
-  // tslint:disable-next-line:ban-types
-  private onModelChange: Function;
+  private onTouch: (_: any) => void;
+  private onModelChange: (_: any) => void;
 
   @Input() data: CategoryNode[];
 
@@ -46,11 +49,11 @@ export class NgxCategorySelectorComponent implements OnInit, ControlValueAccesso
     this.preselectionSubject.next(value || null);
   }
 
-  registerOnTouched(fn: any): void {
+  registerOnTouched(fn: (_: any) => void): void {
     this.onTouch = fn;
   }
 
-  registerOnChange(fn: any): void {
+  registerOnChange(fn: (_: any) => void): void {
     this.onModelChange = fn;
   }
 
@@ -66,9 +69,12 @@ export class NgxCategorySelectorComponent implements OnInit, ControlValueAccesso
       });
   }
 
-  onCategorySelection(event): void {
+  onCategorySelection(event: CategoryNode): void {
     this.selection.emit(event);
-    this.onModelChange(event);
+    if (this.onModelChange) {
+      this.onModelChange(event);
+      this.onTouch(event);
+    }
   }
 
 
@@ -92,11 +98,4 @@ export class NgxCategorySelectorComponent implements OnInit, ControlValueAccesso
     return result;
   }
 
-}
-
-
-export interface CategoryNode {
-  name: string;
-  id: string | number;
-  children: CategoryNode[];
 }
