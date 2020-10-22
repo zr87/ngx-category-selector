@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+### Added
+- implement `setDisabledState`
+
+## [0.1.1] - 2020-10-22
+### Added
+- call `registerOnChange`, `registerOnTouched` function callbacks only when they are registered
+- type fixes
+
 ## [0.1.0] - 2020-10-20
 ### Added
 - implemented ControlValueAccessor - it is possible to use it as a form control

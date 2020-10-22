@@ -68,8 +68,18 @@ import {NgxCategorySelectorModule} from '@rzdesign/ngx-category-selector';
 ## Planned features
 
 - [ ] add unit tests 
+- [ ] implement ControlValueAccessor's `setDisabledState` => add ability to disable the control, add styling according to form state
 - [x] implement ControlValueAccessor => add ability to use the component as a form control 
   
+
+## Examples
+Check examples by running the app.
+
+1. clone repo `git clone https://github.com/zr87/ngx-category-selector`
+2. cd to repo folder and install dependencies `npm install`
+3. start application: `ng serve`
+ 
+  Examples are under `src/app/app.component.ts`
 
 ## :mailbox_with_mail: License & Postcardware
 

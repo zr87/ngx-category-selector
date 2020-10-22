@@ -1,6 +1,12 @@
 {
   "name": "ngx-category-selector",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Category selector component/form control for Angular",
+  "author": {
+    "email": "zoltan@rzdesign.hu",
+    "name": "Zoltan Rakottyai",
+    "url": "https://github.com/zr87"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,11 +30,11 @@
   "homepage": "https://github.com/zr87/ngx-category-selector",
   "keywords": [
     "angular",
-    "javascript",
-    "typescript",
     "category",
     "selector",
-    "chooser"
+    "chooser",
+    "tree",
+    "form control"
   ],
   "dependencies": {
     "@angular/animations": "~10.1.5",

@@ -1,8 +1,12 @@
 {
   "name": "@rzdesign/ngx-category-selector",
-  "version": "0.1.0",
-  "description": "Simple category chooser component in Angular",
-  "author": "RZdesign <zoltan@rzdesign.hu>",
+  "version": "0.1.1",
+  "description": "Category selector component/form control for Angular",
+  "author": {
+    "email": "zoltan@rzdesign.hu",
+    "name": "Zoltan Rakottyai",
+    "url": "https://github.com/zr87"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zr87/ngx-category-selector"
@@ -13,13 +17,11 @@
   "homepage": "https://github.com/zr87/ngx-category-selector",
   "keywords": [
     "angular",
-    "javascript",
-    "typescript",
     "category",
+    "selector",
     "chooser",
     "tree",
-    "recrusive",
-    "selector"
+    "form control"
   ],
   "license": "MIT",
   "peerDependencies": {
